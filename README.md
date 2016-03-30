@@ -5,27 +5,25 @@ CortaSpoof est un logiciel développé dans le cadre d'un projet sur la confiden
  
 ## 1. Introduction sur Cortana 
 
-	En juillet 2015, Microsoft sort son nouvel OS Windows 10. Cet OS est plein de nouvelles fonctionnalités, celles-ci sont présentes pour faciliter l'utilisation de l’utilisateur. Parmi ces fonctionnalités ce trouve l'assistant de recherche vocal Cortana.
+En juillet 2015, Microsoft sort son nouvel OS Windows 10. Cet OS est plein de nouvelles fonctionnalités, celles-ci sont présentes pour faciliter l'utilisation de l’utilisateur. Parmi ces fonctionnalités ce trouve l'assistant de recherche vocal Cortana.
 
 	 
 ### 1.1. Qu'est-ce que Cortana 
 
-	Le nom de Cortana provient du jeu vidéo « Hallo » développé exclusivement sur Xbox la console de Microsoft. Cortana est le nom d'une intelligence virtuel assistant les soldats Spartan dans leurs missions. 
-	Dans Windows 10, Cortana est une assistante vocale personnelle intelligente. Le service se présente dans une barre en bas à gauche de l'écran. Dans cette barre l'utilisateur de Windows 10 peut effectuer une recherche sur internet ou encore rechercher un logiciel ou un fichier présent sur son ordinateur. La recherche peut se faire en tapant le texte de la recherche dans la barre ou par la voix lorsque l'outil est totalement configuré. 
+Le nom de Cortana provient du jeu vidéo « Hallo » développé exclusivement sur Xbox la console de Microsoft. Cortana est le nom d'une intelligence virtuel assistant les soldats Spartan dans leurs missions. 
+Dans Windows 10, Cortana est une assistante vocale personnelle intelligente. Le service se présente dans une barre en bas à gauche de l'écran. Dans cette barre l'utilisateur de Windows 10 peut effectuer une recherche sur internet ou encore rechercher un logiciel ou un fichier présent sur son ordinateur. La recherche peut se faire en tapant le texte de la recherche dans la barre ou par la voix lorsque l'outil est totalement configuré. 
 
  
 ### 1.2. Les dangers de son utilisation 
-	
-	Lorsque le logiciel est totalement configuré, Cortana a accès à une grande partie des informations personnelles de l'utilisateur, cela afin d'en apprendre le plus possible sur ses habitudes, ses goûts ou sa façon de parler. Le profil ainsi fait peut être très proche de la réalité. Microsoft se permet donc une grande intrusion dans notre vie privée avec ce service. Les données envoyées à Microsoft sont gigantesques et sont utilisation par Microsoft peut être douteuse puisque dans ses mentions légales Microsoft peut accéder à ces données si de « bonne foi » il en récent le besoin. 
+
+Lorsque le logiciel est totalement configuré, Cortana a accès à une grande partie des informations personnelles de l'utilisateur, cela afin d'en apprendre le plus possible sur ses habitudes, ses goûts ou sa façon de parler. Le profil ainsi fait peut être très proche de la réalité. Microsoft se permet donc une grande intrusion dans notre vie privée avec ce service. Les données envoyées à Microsoft sont gigantesques et sont utilisation par Microsoft peut être douteuse puisque dans ses mentions légales Microsoft peut accéder à ces données si de « bonne foi » il en récent le besoin. 
 La recherche web peut être désactivée sur Cortana, il suffit alors d'aller dans les paramètres du service. 
 
 
-	Son utilisation reste tout de même appréciée par beaucoup, plutôt que de désactiver totalement le service pourquoi ne pas bruiter totalement le service. Le but de CortaSpoof est justement d'envoyer en continu de fausses requêtes aux serveurs de Microsoft, ainsi les données réellement envoyées par l'utilisateur sont noyées dans la masse de fausses données envoyées. 
+Son utilisation reste tout de même appréciée par beaucoup, plutôt que de désactiver totalement le service pourquoi ne pas bruiter totalement le service. Le but de CortaSpoof est justement d'envoyer en continu de fausses requêtes aux serveurs de Microsoft, ainsi les données réellement envoyées par l'utilisateur sont noyées dans la masse de fausses données envoyées. 
 
- ## 2. Démarrer avec CortaSpoof 
+## 2. Démarrer avec CortaSpoof 
 
-
- 
 ### 2.1. Choix des trames à bruiter 
 
 Avant d'envoyer la requête de recherche, Cortana envoie de nombreuses requêtes, le logiciel permet d'en reproduire certaines d'entre elles, dont l'initialisation ou encore d'autres, sur le diagnostic d'utilisation. La plus importante restant la requête de recherche. 
