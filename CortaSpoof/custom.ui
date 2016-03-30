@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomWinClass</class>
+ <widget class="QDialog" name="CustomWinClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>383</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>383</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>383</width>
+    <height>610</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Custom</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../logo/CortaSpoof.png</normaloff>../logo/CortaSpoof.png</iconset>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Exemple of frame send to bing.com :&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;GET /AS/API/WindowsCortanaPane/V2/Suggestions?qry=about&amp;amp;cp=5&amp;amp;cvid=ce8c2c3ad6704645bb207c0401d709aa&amp;amp;ig=7fdd08f6d6474ead86e3c71404e36dd6&amp;amp;cc=US&amp;amp;setlang=en-US HTTP/1.1&lt;/span&gt;&lt;/p&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Accept:                        */*&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-ClientFeatures:           FontV4, OemEnabled&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Search-SafeSearch:           Moderate&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-MachineId:            {73737373-9999-4444-9999-A8A8A8A8A8A8}&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-Market:                   US&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-DateFormat:               M/d/yyyy&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-OSSKU:                48&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-NetworkType:          ethernet&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-DTZ:                      -420&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-UserDisplayName:          Tester&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-DeviceID:                    0100D33317836214&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-DeviceScale:              100&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-Manufacturer:         innotek GmbH&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-Theme:                    ffffff;005a9e&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-DeviceDimensionsLogical:  320x622&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-DeviceDimensions:         320x622&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-Product:              VirtualBox&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-BM-CBT:                      1439740000&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-isOptin:              false&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-Touch:                false&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-AIS-AuthToken:               AISToken ApplicationId=25555555-ffff-4444-cccc-a7a7a7a7a7a7&amp;amp;ExpiresOn=1440301800&amp;amp;HMACSHA256=CS&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;                               y7XaNyyCE8oAZPeN%2b6IJ4ZrpqDDRZUIJyKvrIKnTA%3d&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Device-ClientSession:        95290000000000000000000000000000&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-Search-AppId:                Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-MSEdge-ExternalExpType:      JointCoord&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;X-MSEdge-ExternalExp:          sup001,pleasenosrm40ct,d-thshld42,d-thshld77,d-thshld78&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Referer:                       https://www.bing.com/&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Accept-Language:               en-US&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Accept-Encoding:               gzip, deflate&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;User-Agent:                    Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0; Cortana 1.4.8.152;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;                               10.0.0.0.10240.21) like Gecko&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Host:                          www.bing.com&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Connection:                    Keep-Alive&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Cookie:                        SA_SUPERFRESH_SUPPRESS=SUPPRESS=0&amp;amp;LAST=1439745358300; SRCHD=AF=NOFORM; ...&lt;/span&gt;&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>580</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>47</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>text of cortana research</string>
+   </property>
+   <property name="whatsThis">
+    <string>text of cortana research</string>
+   </property>
+   <property name="text">
+    <string>Query :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Query_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>text of cortana research</string>
+   </property>
+   <property name="text">
+    <string>private</string>
+   </property>
+   <property name="maxLength">
+    <number>100</number>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>language use</string>
+   </property>
+   <property name="text">
+    <string>language :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Windows Id</string>
+   </property>
+   <property name="whatsThis">
+    <string>windows Id (we didn't find where Windows store it content)</string>
+   </property>
+   <property name="text">
+    <string>X-DeviceID :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>colors of Windows theme</string>
+   </property>
+   <property name="whatsThis">
+    <string>colors of Windows theme</string>
+   </property>
+   <property name="text">
+    <string>X-BM-Theme :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="DeviceId_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>310</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>windows Id </string>
+   </property>
+   <property name="maxLength">
+    <number>16</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Filter out adult content</string>
+   </property>
+   <property name="whatsThis">
+    <string>Filter out adult content</string>
+   </property>
+   <property name="text">
+    <string>X-Search-SafeSearch :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>The operating system edition is determined by using the OperatingSystemSKU</string>
+   </property>
+   <property name="whatsThis">
+    <string>The operating system edition</string>
+   </property>
+   <property name="text">
+    <string>X-Device-OSSKU :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Type of network technologie used</string>
+   </property>
+   <property name="whatsThis">
+    <string>Type of network technologie used</string>
+   </property>
+   <property name="text">
+    <string>X-Device-NetworkType :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="text">
+    <string>X-BM-DTZ :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>scale of the screen</string>
+   </property>
+   <property name="whatsThis">
+    <string>scale of the screen</string>
+   </property>
+   <property name="text">
+    <string>X-BM-DeviceScale :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Manufacturer of the computer</string>
+   </property>
+   <property name="whatsThis">
+    <string>Manufacturer of the computer</string>
+   </property>
+   <property name="text">
+    <string>X-BM-Device-Manufacturer :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Manufacturer_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>370</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Manufacturer of the computer</string>
+   </property>
+   <property name="text">
+    <string>System manufacturer</string>
+   </property>
+   <property name="maxLength">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Theme_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>400</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>colors of Windows theme</string>
+   </property>
+   <property name="text">
+    <string>ffffff;005a9e</string>
+   </property>
+   <property name="maxLength">
+    <number>50</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Screen dimensions</string>
+   </property>
+   <property name="whatsThis">
+    <string>Screen dimensions</string>
+   </property>
+   <property name="text">
+    <string>X-BM-DeviceDimensions :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Product use</string>
+   </property>
+   <property name="whatsThis">
+    <string>Product use</string>
+   </property>
+   <property name="text">
+    <string>X-Device-Product :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>550</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Client session</string>
+   </property>
+   <property name="whatsThis">
+    <string>identifier of session</string>
+   </property>
+   <property name="text">
+    <string>X-Device-ClientSession :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Session_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>550</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>identifier of session</string>
+   </property>
+   <property name="maxLength">
+    <number>33</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="OSSKU_Spin">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>The operating system edition</string>
+   </property>
+   <property name="value">
+    <number>48</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="DTZ_Spin">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>250</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-512</number>
+   </property>
+   <property name="maximum">
+    <number>512</number>
+   </property>
+   <property name="value">
+    <number>-420</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Language_Box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>40</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>language use</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>en-US</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>en-UK</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>fr-FR</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="NetworkType_Box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Type of network technologie used</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>ethernet</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>wlan</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="Dimensions_Box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>430</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Screen dimensions</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>1360x768</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1280x1024</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1280x800</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1280x768</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1280x720</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1024x768</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>800x600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>350x582</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>344x582</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>320x622</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>320x582</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="DeviceScale_Spin">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>340</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>scale of the screen</string>
+   </property>
+   <property name="maximum">
+    <number>100</number>
+   </property>
+   <property name="value">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="SafeSearch_Box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>130</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Filter out adult content</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Strict</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moderate</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Desactivated</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>touch screen ?</string>
+   </property>
+   <property name="whatsThis">
+    <string>touch screen ?</string>
+   </property>
+   <property name="text">
+    <string>X-Device-Touch :</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Touch_Box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>520</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>touch screen ?</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>false</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>true</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="RandClientSession_B">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>550</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>randomize value</string>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RandDeviceId_B">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>310</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>randomize value</string>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="UserDisplayName_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>220</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>username</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>username</string>
+   </property>
+   <property name="whatsThis">
+    <string>username</string>
+   </property>
+   <property name="text">
+    <string>X-BM-UserDisplayName :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="market_L">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>market place</string>
+   </property>
+   <property name="text">
+    <string>market : </string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Market_Box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>41</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>market place</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>BE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>FR</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>IE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>IT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UK</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>US</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SP</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="Dico_Check">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Using a dictionary of expressions</string>
+   </property>
+   <property name="text">
+    <string>use dictionnary</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="MachineId_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>280</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>windows Id</string>
+   </property>
+   <property name="maxLength">
+    <number>38</number>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RandMachineId_B">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>280</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>randomize value</string>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Windows Id</string>
+   </property>
+   <property name="whatsThis">
+    <string>windows Id</string>
+   </property>
+   <property name="text">
+    <string>X-Device-MachineId :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Manufacturer of the computer</string>
+   </property>
+   <property name="whatsThis">
+    <string>CBT (unknow utility)</string>
+   </property>
+   <property name="text">
+    <string>X-BM-CBT :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="CBT_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>490</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>CBT</string>
+   </property>
+   <property name="text">
+    <string>1439740000</string>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Filter out adult content</string>
+   </property>
+   <property name="whatsThis">
+    <string>writing date format</string>
+   </property>
+   <property name="text">
+    <string>X-BM-DateFormat :</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="DateFormat_Box">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>writing date format</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>M/D/yyyy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>M/d/yyyy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>dd/MM/yyyy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>MM/dd/yyyy</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="Device_Product_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>460</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Product use</string>
+   </property>
+   <property name="text">
+    <string>System Product Name</string>
+   </property>
+   <property name="maxLength">
+    <number>100</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>CustomWinClass</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>CustomWinClass</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
