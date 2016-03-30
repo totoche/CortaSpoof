@@ -108,7 +108,7 @@ X-Device-Touch:           la machine est tactile ou non
  
 ## 3. Utilisation de CortaSpoof 
 
-###3.1. Personnalisation du header 
+### 3.1. Personnalisation du header 
 
 Il est possible de personnaliser chacun des champs du header en cliquant sur le bouton « custom ».
 
