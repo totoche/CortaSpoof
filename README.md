@@ -29,11 +29,11 @@ Son utilisation reste tout de même appréciée par beaucoup, plutôt que de dé
 Avant d'envoyer la requête de recherche, Cortana envoie de nombreuses requêtes, le logiciel permet d'en reproduire certaines d'entre elles, dont l'initialisation ou encore d'autres, sur le diagnostic d'utilisation. La plus importante restant la requête de recherche. 
 Exemple requête de recherche.
 
-Liste des trames :
-	Cortana Init : initialisation du service.
-	Cortana manifest spoofing : énumère les ressources contenues et décrit le contenu du paquet
-	Cortana query spoofing : requête de recherche.
-	Cortana zinc : 
+ Liste des trames :  
+ Cortana Init : initialisation du service.  
+ Cortana manifest spoofing : énumère les ressources contenues et décrit le contenu du paquet  
+ Cortana query spoofing : requête de recherche.  
+ Cortana zinc :  
 
  
 ### 2.2. Démarrer et arrêter le bruitage de Cortana 
@@ -44,64 +44,63 @@ Pour l’arrêt, il suffit de cliquer sur le bouton, "stop spoofing". La fermetu
  
 ### 2.3 Données envoyées 
 
-Une requête d'une recherche ressemble à :
-GET /AS/API/WindowsCortanaPane/V2/Suggestions?qry=about&cp=5&cvid=ce8c2c3ad6704645bb207c0401d709aa&ig=7fdd08f6d6474ead86e3c71404e36dd6&cc=US&setlang=en-US HTTP/1.1
-Accept:                        */*
-X-BM-ClientFeatures:           FontV4, OemEnabled
-X-Search-SafeSearch:           Moderate
-X-Device-MachineId:            {73737373-9999-4444-9999-A8A8A8A8A8A8}
-X-BM-Market:                   US
-X-BM-DateFormat:               M/d/yyyy
-X-Device-OSSKU:                48
-X-Device-NetworkType:          ethernet
-X-BM-DTZ:                      -420
-X-BM-UserDisplayName:          Tester
-X-DeviceID:                    0100D33317836214
-X-BM-DeviceScale:              100
-X-Device-Manufacturer:         innotek GmbH
-X-BM-Theme:                    ffffff;005a9e
-X-BM-DeviceDimensionsLogical:  320x622
-X-BM-DeviceDimensions:         320x622
-X-Device-Product:              VirtualBox
-X-BM-CBT:                      1439740000
-X-Device-isOptin:              false
-X-Device-Touch:                false
-X-AIS-AuthToken:               AISToken ApplicationId=25555555-ffff-4444-cccc-a7a7a7a7a7a7&ExpiresOn=1440301800&HMACSHA256=CS
-                               y7XaNyyCE8oAZPeN%2b6IJ4ZrpqDDRZUIJyKvrIKnTA%3d
-X-Device-ClientSession:        95290000000000000000000000000000
-X-Search-AppId:                Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI
-X-MSEdge-ExternalExpType:      JointCoord
-X-MSEdge-ExternalExp:          sup001,pleasenosrm40ct,d-thshld42,d-thshld77,d-thshld78
-Referer:                       https://www.bing.com/
-Accept-Language:               en-US
-Accept-Encoding:               gzip, deflate
-User-Agent:                    Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0; Cortana 1.4.8.152;
-                               10.0.0.0.10240.21) like Gecko
-Host:                          www.bing.com
-Connection:                    Keep-Alive
-Cookie: SA_SUPERFRESH_SUPPRESS=SUPPRESS=0&LAST=1439745358300; SRCHD=AF=NOFORM; ...
+Une requête d'une recherche ressemble à :  
+ GET /AS/API/WindowsCortanaPane/V2/Suggestions?qry=about&cp=5&cvid=ce8c2c3ad6704645bb207c0401d709aa&ig=7fdd08f6d6474ead86e3c71404e36dd6&cc=US&setlang=en-US HTTP/1.1  
+ Accept:                        */*  
+ X-BM-ClientFeatures:           FontV4, OemEnabled  
+ X-Search-SafeSearch:           Moderate  
+ X-Device-MachineId:            {73737373-9999-4444-9999-A8A8A8A8A8A8}  
+ X-BM-Market:                   US  
+ X-BM-DateFormat:               M/d/yyyy  
+ X-Device-OSSKU:                48  
+ X-Device-NetworkType:          ethernet  
+ X-BM-DTZ:                      -420  
+ X-BM-UserDisplayName:          Tester  
+ X-DeviceID:                    0100D33317836214  
+ X-BM-DeviceScale:              100  
+ X-Device-Manufacturer:         innotek GmbH  
+ X-BM-Theme:                    ffffff;005a9e  
+ X-BM-DeviceDimensionsLogical:  320x622  
+ X-BM-DeviceDimensions:         320x622  
+ X-Device-Product:              VirtualBox  
+ X-BM-CBT:                      1439740000  
+ X-Device-isOptin:              false  
+ X-Device-Touch:                false  
+ X-AIS-AuthToken:               AISToken ApplicationId=25555555-ffff-4444-cccc-a7a7a7a7a7a7&ExpiresOn=1440301800&HMACSHA256=CS
+                                y7XaNyyCE8oAZPeN%2b6IJ4ZrpqDDRZUIJyKvrIKnTA%3d  
+ X-Device-ClientSession:        95290000000000000000000000000000  
+ X-Search-AppId:                Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI  
+ X-MSEdge-ExternalExpType:      JointCoord  
+ X-MSEdge-ExternalExp:          sup001,pleasenosrm40ct,d-thshld42,d-thshld77,d-thshld78  
+ Referer:                       https://www.bing.com/  
+ Accept-Language:               en-US  
+ Accept-Encoding:               gzip, deflate  
+ User-Agent:                    Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0; Cortana 1.4.8.152;  
+                                10.0.0.0.10240.21) like Gecko  
+ Host:                          www.bing.com  
+ Connection:                    Keep-Alive  
+ Cookie: SA_SUPERFRESH_SUPPRESS=SUPPRESS=0&LAST=1439745358300; SRCHD=AF=NOFORM; ...  
 
 Cette requête HTTPS contient de nombreux headers. Ces headers contiennent principalement des informations sur la machine utilisée. 
 
-X-Search-SafeSearch:		  filtre plus ou moins les contenus pour adulte
-X-Device-MachineId:            identifiant de la machine
-X-BM-Market:                   nationalité du Windows store
-X-BM-DateFormat:               format d'écriture de la date 
-X-Device-OSSKU:                version de Windows
-X-Device-NetworkType:          moyen de communication internet utilisée
-X-BM-DTZ:                      usage inconnu
-X-BM-UserDisplayName:          nom de l'utilisateur
-X-DeviceID:                    identifiant Cortana (pas sure)
-X-BM-DeviceScale:              pourcentage d'occupation de l'image à l'écran
-X-Device-Manufacturer:         constructeur de la machine
-X-BM-Theme:                    couleur principale du thème Windows
-X-BM-DeviceDimensionsLogical:  taille de la fenêtre cortana
-X-BM-DeviceDimensions:         taille de la fenêtre cortana
-X-Device-Product:              nom du produit
-X-BM-CBT:                      identifiant de la recherche (pas sure)
-X-Device-isOptin:              usage inconnu
-X-Device-Touch:           la machine est tactile ou non
-
+ X-Search-SafeSearch:		  filtre plus ou moins les contenus pour adulte  
+ X-Device-MachineId:            identifiant de la machine  
+ X-BM-Market:                   nationalité du Windows store  
+ X-BM-DateFormat:               format d'écriture de la date  
+ X-Device-OSSKU:                version de Windows  
+ X-Device-NetworkType:          moyen de communication internet utilisée  
+ X-BM-DTZ:                      usage inconnu  
+ X-BM-UserDisplayName:          nom de l'utilisateur  
+ X-DeviceID:                    identifiant Cortana (pas sure)  
+ X-BM-DeviceScale:              pourcentage d'occupation de l'image à l'écran  
+ X-Device-Manufacturer:         constructeur de la machine  
+ X-BM-Theme:                    couleur principale du thème Windows  
+ X-BM-DeviceDimensionsLogical:  taille de la fenêtre cortana  
+ X-BM-DeviceDimensions:         taille de la fenêtre cortana  
+ X-Device-Product:              nom du produit  
+ X-BM-CBT:                      identifiant de la recherche (pas sure)  
+ X-Device-isOptin:              usage inconnu  
+ X-Device-Touch:           la machine est tactile ou non  
 
  
 ## 3. Utilisation de CortaSpoof 
