@@ -1,16 +1,16 @@
 # CortaSpoof
 
-CortaSpoof est un logiciel développé dans le cadre d'un projet sur la confidentialité de Windows 10 dans le laboratoire CVO de l'ESIEA à Laval. Pour plus d'information sur le projet  (lien article arxiv)
+CortaSpoof est un logiciel développé dans le cadre d'un projet sur la confidentialité de Windows 10 dans le laboratoire CVO de l'ESIEA à Laval. Pour plus d'information sur le projet:  (lien article arxiv)
 
  
 ## 1. Introduction sur Cortana 
 
-En juillet 2015, Microsoft sort son nouvel OS Windows 10. Cet OS est plein de nouvelles fonctionnalités, celles-ci sont présentes pour faciliter l'utilisation de l’utilisateur. Parmi ces fonctionnalités ce trouve l'assistant de recherche vocal Cortana.
+En juillet 2015, Microsoft sort son nouvel OS Windows 10. Cet OS est plein de nouvelles fonctionnalitéds, celles-ci sont présentes pour faciliter l'utilisation de l’utilisateur. Parmi ces fonctionnalitéds ce trouve l'assistant de recherche vocal Cortana.
 
 	 
 ### 1.1. Qu'est-ce que Cortana 
 
-Le nom de Cortana provient du jeu vidéo « Hallo » développé exclusivement sur Xbox la console de Microsoft. Cortana est le nom d'une intelligence virtuel assistant les soldats Spartan dans leurs missions. 
+Le nom Cortana provient du jeu vidéo « Halo » développé exclusivement sur Xbox, la console de Microsoft. Cortana est le nom d'une intelligence virtuel assistant le master Master Chief Petty Officer John-117 dans ses missions. 
 Dans Windows 10, Cortana est une assistante vocale personnelle intelligente. Le service se présente dans une barre en bas à gauche de l'écran. Dans cette barre l'utilisateur de Windows 10 peut effectuer une recherche sur internet ou encore rechercher un logiciel ou un fichier présent sur son ordinateur. La recherche peut se faire en tapant le texte de la recherche dans la barre ou par la voix lorsque l'outil est totalement configuré. 
 
  
@@ -20,7 +20,7 @@ Lorsque le logiciel est totalement configuré, Cortana a accès à une grande pa
 La recherche web peut être désactivée sur Cortana, il suffit alors d'aller dans les paramètres du service. 
 
 
-Son utilisation reste tout de même appréciée par beaucoup, plutôt que de désactiver totalement le service pourquoi ne pas bruiter totalement le service. Le but de CortaSpoof est justement d'envoyer en continu de fausses requêtes aux serveurs de Microsoft, ainsi les données réellement envoyées par l'utilisateur sont noyées dans la masse de fausses données envoyées. 
+Son utilisation reste tout de même appréciée par beaucoup, plutôt que de désactiver totalement le service pourquoi ne pas bruiter totalement le service. Le but de CortaSpoof est justement d'envoyer en continue de fausses requêtes aux serveurs de Microsoft, ainsi les données réellement envoyées par l'utilisateur sont noyées dans la masse de fausses données envoyées. 
 
 ## 2. Démarrer avec CortaSpoof 
 
@@ -120,7 +120,7 @@ Un clique sur le bouton d'aide à côté de la croix de fermeture de la fenêtre
  
 ### 3.2. Ajouter des expressions 
 
-Par défaut, les recherches envoyées sont choisies aléatoirement dans un dictionnaire de la langue de votre machine. Mais il est possible pour l'utilisateur d'envoyé en mot unique en décochant la case « use dico ». 
+Par défaut, les recherches envoyées sont choisies aléatoirement dans un dictionnaire de la langue de votre machine. Mais il est possible pour l'utilisateur d'envoyé un mot unique en décochant la case « use dico ». 
 Les listes d'expressions sont disponibles dans le dossier "dico". Suivant la langue choisie, le fichier correspondant sera choisi pour l'envoi de recherche aléatoire. Il est possible à l'utilisateur de modifier cette liste en y ajoutant ses propres termes de recherche. 
 
  
