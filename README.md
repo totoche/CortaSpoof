@@ -22,7 +22,7 @@ La recherche web peut être désactivée sur Cortana, il suffit alors d'aller da
 
 Son utilisation reste tout de même appréciée par beaucoup, plutôt que de désactiver totalement le service pourquoi ne pas bruiter totalement le service. Le but de CortaSpoof est justement d'envoyer en continue de fausses requêtes aux serveurs de Microsoft, ainsi les données réellement envoyées par l'utilisateur sont noyées dans la masse de fausses données envoyées. 
 
-## 2. Démarrer avec CortaSpoof 
+## 2. Utilisation de CortaSpoof 
 
 ### 2.1. Choix des trames à bruiter 
 
@@ -103,7 +103,7 @@ Cette requête HTTPS contient de nombreux headers. Ces headers contiennent princ
  X-Device-Touch:           la machine est tactile ou non  
 
  
-## 3. Utilisation de CortaSpoof 
+## 3. Utilisation avancée de CortaSpoof 
 
 ### 3.1. Personnalisation du header 
 
@@ -128,3 +128,7 @@ Les listes d'expressions sont disponibles dans le dossier "dico". Suivant la lan
 
 Lorsque le programme est quitté, toutes les informations renseignées dans le logiciel sont enregistrées dans le fichier « backup » dans le même dossier que l’exécutable. Lors d'un prochain démarrage du logiciel, il est demandé à l'utilisateur s'il veut oui ou non charger les données de cette sauvegarde.
 
+## 4. Développement
+
+Ce logiciel à été développer sous visual studio 2015 et utilise QT 5 pour l'interface graphique.<br/>
+Toutes proposition d'amélioration est la bienvenue ;)
