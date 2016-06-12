@@ -326,7 +326,7 @@ void CortaSpoof::set_NbSend(int nb)
 	else
 	{
 		char str[10];
-		sprintf(str, "Send : %d", m_nbSend);
+		sprintf(str, "Sent : %d", m_nbSend);
 		ui.NbSend_L->setText(str);
 	}
 }
